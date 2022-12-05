@@ -5,30 +5,23 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Spacing="25"
+            Spacing="22"
             Padding="30,0"
             VerticalOptions="Center">
 
             <Image
-                Source="dog.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
+                Source="book.png"
+                SemanticProperties.Description="Ikona aplikace, zdroj Pixabay :)"
+                HeightRequest="220"
                 HorizontalOptions="Center" />
-
-            <Label
-                Text="Zadej text: "
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="25"
-                HorizontalOptions="Start"
-                />
-
-            <Entry x:Name="vstupText" FontSize="25" Placeholder="Ahoj :)"/>
+            <Entry x:Name="vstupText" FontSize="22" Placeholder="Zadejte text" MinimumWidthRequest="620" Margin="0,-5, 0,-5" Keyboard="Text" HorizontalOptions="CenterAndExpand"/>
+            <Line MaximumHeightRequest="1" MinimumHeightRequest="1" BackgroundColor="#4B1CFF" Margin="0,-15,0,0"/>
             <RadioButton x:Name="rbCAPSLOCK" IsChecked="True" Content="Vše na velká písmena"/>
             <RadioButton x:Name="rbMalaPismena" IsChecked="False" Content="Vše na malá písmena"/>
             <RadioButton x:Name="rbObratit" IsChecked="False" Content="Obrátit text"/>
 
-            <Button x:Name="btnPrevest" Text="Převést" FontSize="30" Clicked="btnPrevest_Clicked"/>
-            <Button x:Name="btnZkopirovat" Text="Zkopírovat" FontSize="30" FontAttributes="Italic" Clicked="btnZkopirovat_Clicked"/>
+            <Button x:Name="btnPrevest" Text="Převést" FontSize="Large" BackgroundColor="{AppThemeBinding Dark={StaticResource Primary}, Light={StaticResource Primary}}" TextColor="{AppThemeBinding Dark=White, Light=White}" Clicked="btnPrevest_Clicked"/>
+            <Button x:Name="btnZkopirovat" Text="Zkopírovat" FontSize="Small" Clicked="btnZkopirovat_Clicked" BorderColor="{AppThemeBinding Dark={StaticResource Primary}, Light={StaticResource Primary}}" BorderWidth="1" BackgroundColor="{AppThemeBinding Dark=Transparent, Light=White}" TextColor="{AppThemeBinding Dark=White, Light=DarkBlue}"/>
         </VerticalStackLayout>
     </ScrollView>
 

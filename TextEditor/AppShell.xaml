@@ -7,7 +7,7 @@
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Home"
+        Title="TextEditor Lite"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
