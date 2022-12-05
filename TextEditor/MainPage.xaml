@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TextEditor.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dog.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Zadej text: "
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="25"
+                HorizontalOptions="Start"
+                />
+
+            <Entry x:Name="vstupText" FontSize="25" Placeholder="Ahoj :)"/>
+            <RadioButton x:Name="rbCAPSLOCK" IsChecked="True" Content="Vše na velká písmena"/>
+            <RadioButton x:Name="rbMalaPismena" IsChecked="False" Content="Vše na malá písmena"/>
+            <RadioButton x:Name="rbObratit" IsChecked="False" Content="Obrátit text"/>
+
+            <Button x:Name="btnPrevest" Text="Převést" FontSize="30" Clicked="btnPrevest_Clicked"/>
+            <Button x:Name="btnZkopirovat" Text="Zkopírovat" FontSize="30" FontAttributes="Italic" Clicked="btnZkopirovat_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
