@@ -17,11 +17,11 @@
             <Entry x:Name="vstupText" FontSize="22" Placeholder="Zadejte text" MinimumWidthRequest="620" Margin="0,-5, 0,-5" Keyboard="Text" HorizontalOptions="CenterAndExpand"/>
             <Line MaximumHeightRequest="1" MinimumHeightRequest="1" BackgroundColor="#4B1CFF" Margin="0,-15,0,0"/>
             <RadioButton x:Name="rbCAPSLOCK" IsChecked="True" Content="Vše na velká písmena"
-                         BorderColor="{AppThemeBinding Dark={StaticResource Primary}, Light={StaticResource Primary}}"/>
+                         />
             <RadioButton x:Name="rbMalaPismena" IsChecked="False" Content="Vše na malá písmena"
-                         BorderColor="{AppThemeBinding Dark={StaticResource Primary}, Light={StaticResource Primary}}"/>
+                         />
             <RadioButton x:Name="rbObratit" IsChecked="False" Content="Obrátit text"
-                         BorderColor="{AppThemeBinding Dark={StaticResource Primary}, Light={StaticResource Primary}}"/>
+                         />
 
             <Button x:Name="btnPrevest" Text="Převést" FontSize="Large" BackgroundColor="{AppThemeBinding Dark={StaticResource Primary}, Light={StaticResource Primary}}" TextColor="{AppThemeBinding Dark=White, Light=White}" Clicked="btnPrevest_Clicked"/>
             <Button x:Name="btnZkopirovat" Text="Zkopírovat" FontSize="Small" Clicked="btnZkopirovat_Clicked" BorderColor="{AppThemeBinding Dark={StaticResource Primary}, Light={StaticResource Primary}}" BorderWidth="1" BackgroundColor="{AppThemeBinding Dark=Transparent, Light=White}" TextColor="{AppThemeBinding Dark=White, Light=DarkBlue}"/>
